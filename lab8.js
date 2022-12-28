@@ -13,3 +13,13 @@ function showDaysCount(params) {
     daysCount = Math.ceil(daysCount);
     result.innerHTML = 'С даты рождения прошло дней: ' + daysCount;
 }
+window.addEventListener('load', showDate);
+
+function showTime() {
+    let outTime = document.getElementById('time');
+    let currentTime = new Date();
+    outTime.innerHTML = currentTime.toLocaleTimeString('ru');
+}
+
+window.addEventListener('load', showTime);
+setInterval(showTime, 1000);
