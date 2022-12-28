@@ -13,4 +13,16 @@ name.innerHTML = 'Prokina Olga;
 footer.innerHTML - 'Faculty of Business, FBI-00, 3rd year, 2022';
    document.getElementById ('your-name') .innerHTML = 'Your name';
 document.getElementById ('input-name') .placeholder = 'Enter your name';
+
+Function showAlert() {
+let userName = document.getElementById("input-name').value;
+let userSurname = document.getElementById('input-surname').value;
+let userAge = document .getElementById ('input-age').value;
+alert ('Привет, ' + userName + ' ' + userSurname + \'n' + 'Ваш возраст: ' + userAge);
+let r = Math.round (Math.random () *255);
+let g = Math.round (Math.random () *255);
+let b = Math.round (Math.random () *255);
+let color = 'rgb(' + r + 1 + g + b + ')';
+document.getElementById('user-data').style.backgroundColor = color;
+
   
