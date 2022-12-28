@@ -5,9 +5,14 @@ let userAge = document .getElementById ('input-age').value;
   let greeting;
 if (userAge <= 17) {
 greeting = 'Здравствуй, ';
+if (userSex == 'female') { greeting += 'девочка'; }
+else {greeting += 'мальчик';}
 }
   else {
-    greeting = ' Здравствуйте, '; }
+    greeting = ' Здравствуйте, ';
+    if (userSex == 'female') { greeting 'госпожа'; }
+    else {greeting += 'господин';}
+    }
 alert (greeting + userName + ' ' + userSurname + '\n' + 'Ваш возраст: ' + userAge);
       );
 let r = Math.round (Math. random () *255)
@@ -15,4 +20,4 @@ let r = Math.round (Math.random () *255);
 let g = Math.round (Math.random () *255);
 let b = Math.round (Math.random () *255);
 let color = 'rgb(' + r + 1 + g + b + ')';
-document.getElementById('user-data').style.backgroundColor = color;
+document.getElementById('user-data').style.backgroundColor = color; }
