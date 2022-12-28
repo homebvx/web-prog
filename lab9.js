@@ -10,3 +10,10 @@ function student1(button) {
         button.innerHTML = 'Ольга';
     else
     button.innerHTML = 'Прокина'
+}
+    
+function knopka(button) {
+    if(button.innerHTML == 'Нажми сюда') {
+        button.innerHTML = 'Ещё раз нажми';
+        button.style.color = 'red';
+    }
