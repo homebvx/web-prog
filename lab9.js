@@ -53,3 +53,24 @@ window.addEventListener('DOMContentLoaded', function() {
     texts[1].addEventListener('focus',  showFocus);
     texts[2].addEventListener('focus',  showFocus);
 });
+function showBlur(event) {
+    event.target.style.color = 'black';
+    event.target.style.fontSize = '30px';
+}
+
+window.addEventListener('DOMContentLoaded', function() {
+    let texts = document.querySelectorAll('input[type = "text"]');
+    texts[0].addEventListener('blur',  showBlur);
+    texts[1].addEventListener('blur',  showBlur);
+    texts[2].addEventListener('blur',  showBlur);
+});
+function showChange(event) {
+    document.getElementById('output').innerHTML=event.target.value;
+}
+
+window.addEventListener('DOMContentLoaded', function() {
+    let texts = document.querySelectorAll('input[type = "text"]');
+    texts[0].addEventListener('change',  showChange);
+    texts[1].addEventListener('change',  showChange);
+    texts[2].addEventListener('change',  showChange);
+});
