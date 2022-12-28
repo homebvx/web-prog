@@ -43,3 +43,10 @@ body {
     text-align: center;
     margin: auto;
 }
+    
+    .tablitca_y {
+    width: 700px;
+    height: 500px;
+    position: absolute;
+    text-align: center;
+}
