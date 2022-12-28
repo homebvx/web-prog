@@ -17,3 +17,18 @@ function knopka(button) {
         button.innerHTML = 'Ещё раз нажми';
         button.style.color = 'red';
     }
+
+        else if(button.innerHTML == 'Ещё раз нажми') {
+        button.innerHTML = 'Ещё';  
+        button.style.color = 'green';
+    }
+         
+    else if(button.innerHTML == 'Ещё') {
+        button.innerHTML = 'Начать сначала';   
+        button.style.color = 'blue';
+    }
+        
+    else {
+        button.innerHTML = 'Нажми сюда' 
+        button.style.color = 'gray'; 
+    }
