@@ -1,5 +1,5 @@
 Function showAlert() {
-let userName = document.getElementById("input-name').value;
+let userName = document.getElementById('input-name').value;
 let userSurname = document.getElementById('input-surname').value;
 let userAge = document .getElementById ('input-age').value;
   let greeting;
