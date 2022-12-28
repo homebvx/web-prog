@@ -35,3 +35,20 @@ steps[i].style.left = (30 + 10*i) + 'px';
 steps[i].style.top = (300 + 80*i) + 'px';
 steps[i].innerHTML = 'Блок номер' + i;
 }
+
+function makeFlake() {
+    let snowflake = document.querySelector('#snowflake');
+    let stepCount = 10;
+    for(let i = 0; i<stepCount; i++) {
+        snowflake.innerHTML += '<img class = "snezhinki" src = "pict11.jpg">';
+    }
+    let snezhinki = document.querySelectorAll('.snezhinki');
+    let screenWidth = window.screen.width;
+    let screenHeight = window.screen.height;
+    
+    for(let i = 0; i<stepCount; i++) {
+        snezhinki[i].style.left = Math.random() * (screenWidth-50) +'px';
+        snezhinki[i].style.top = Math.random() * (screenHeight-50) +'px';
+        snezhinki[i].style.width = Math.random() * 100 +'px';
+    } 
+}
